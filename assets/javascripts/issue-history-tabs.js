@@ -15,6 +15,7 @@ function init_tabs() {
 function show_comments() {
   $$('.journal').invoke('hide');
   $$('.journal.has-notes').invoke('show');
+  $$('.journal.has-notes ul.details').invoke('hide');
 }
 
 function show_all() {
@@ -40,4 +41,6 @@ var tabComment;
 
 document.observe('dom:loaded', function(){
   init_tabs();
+  if ($('history'))
+    $('history').insert({top: $('history_tabs')});
 });
