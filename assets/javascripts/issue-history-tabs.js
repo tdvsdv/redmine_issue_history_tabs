@@ -20,6 +20,7 @@ function show_comments() {
 
 function show_all() {
   $$('.journal').invoke('show');
+  $$('.journal.has-notes ul.details').invoke('show');
 }
 
 function click_comments(e) {
@@ -43,4 +44,6 @@ document.observe('dom:loaded', function(){
   init_tabs();
   if ($('history'))
     $('history').insert({top: $('history_tabs')});
+  else
+    $('history_tabs').hide();
 });
