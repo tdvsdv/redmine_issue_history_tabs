@@ -34,3 +34,5 @@ Plugin aims to support and is tested under the following Ruby implementations:
 Plugin aims to support and is tested under the following Rails implementations:
 * Rails 3.2.13
 
+
+Another plugins of our team you can see on site http://rmplus.pro
