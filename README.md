@@ -34,5 +34,7 @@ Plugin aims to support and is tested under the following Ruby implementations:
 Plugin aims to support and is tested under the following Rails implementations:
 * Rails 3.2.13
 
+[skin]: https://github.com/tdvsdv/redmine_alex_skin.git
+For better appearance we recommend to use this plugin with Redmine skin of our team - [Redmine Alex Skin][skin].
 
 Another plugins of our team you can see on site http://rmplus.pro
