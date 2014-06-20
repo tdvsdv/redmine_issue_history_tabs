@@ -1,0 +1,11 @@
+<% content_for :header_tags do%>
+  <%= stylesheet_link_tag('issue_history_tabs.css', :plugin => :redmine_issue_history_tabs) %>
+  <%= javascript_include_tag('issue-history-tabs.js', :plugin => :redmine_issue_history_tabs) %>
+<% end %>
+
+<%# reply_links = authorize_for('issues', 'edit') -%>
+
+<div id="history_tabs" class="tabs">
+<%= render_tabs [ {name: 'history_comments', partial: 'redmine_history_tabs/blank', label: :label_history_tab_comments},
+                  {name: 'history_all', partial: 'redmine_history_tabs/blank', label: :label_history_tab_all } ] %>
+</div>
